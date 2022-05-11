@@ -34,10 +34,9 @@ fun MessageCard(name: String) {
     Text(text = "Hello $name!")
 }
 
-@Preview(showBackground = true)
+// Preview: パラメータを受け取らないコンポーズ可能な関数で使用する必要があります
+@Preview
 @Composable
-fun DefaultPreview() {
-    ComposeTutorialTheme {
-        Greeting("Android")
-    }
+fun PreviewMessageCard() {
+    MessageCard("Android")
 }
